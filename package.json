@@ -1,0 +1,40 @@
+{
+  "name": "damon-reporter",
+  "version": "0.0.1",
+  "description": "💬 Default reporter for the damon tool. ",
+  "main": "index.js",
+  "scripts": {
+    "postversion": "npm run changelog",
+    "pretest": "npm run format && npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "jscs ./index.js",
+    "lint": "eslint ./index.js",
+    "changelog": "node ./bin/changelog.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damonjs/damon-reporter.git"
+  },
+  "keywords": [
+    "reporter",
+    "test",
+    "damon",
+    "damon-reporter",
+    "damonjs"
+  ],
+  "author": "Yoann Moinet <yo@nnmoi.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/damonjs/damon-reporter/issues"
+  },
+  "homepage": "https://github.com/damonjs/damon-reporter#readme",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "slice-ansi": "0.0.4",
+    "strip-ansi": "^3.0.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "conventional-changelog": "^1.1.0"
+  }
+}
