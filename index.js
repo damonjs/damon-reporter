@@ -146,8 +146,7 @@ module.exports = function (runner) {
                 st += chalk.black(tasks.config.describe);
             }
 
-            // Adding 1 for the navigation.
-            nbTasks = tasks.tasks.length + 1;
+            nbTasks = tasks.tasks.length;
             st += chalk.bold.red(' (' + nbTasks + ' task');
             if (nbTasks > 1) {
                 st += chalk.bold.red('s');
