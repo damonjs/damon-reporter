@@ -1,6 +1,6 @@
 {
   "name": "damon-reporter",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "💬 Default reporter for the damon tool. ",
   "main": "index.js",
   "scripts": {
